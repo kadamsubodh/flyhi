@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<TITLE>PHP Integration Kit</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style>
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+th 		 { font-size:12px;background:#015289;color:#FFFFFF;font-weight:bold;height:30px;}
+td 		 { font-size:12px;background:#DDE8F3}
+.error {color:#FF0000; font-weight:bold;}
+</style>
+</HEAD>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 bgcolor="#ECF1F7">
+
+<table width="900" cellpadding="2" cellspacing="2" border="0" align="center">
+<tr>
+<th colspan="2">
+<div id="tabs">
+
+<div id="tabs-1">
+        <form action="pay.php" name="payment" method="POST">
+        <ul>
+        <h3 style="font-size:25px;">
+            This is a sample php file to demonstrate the payment page integration
+        </h3>
+         </ul>
+
+        <h4 style="font-size:20px; text-align:left;">
+        Please ensure the following assets are available to view the demonstration
+        </h4>
+       <ol style="text-align:left;">
+       <li> Wamp server need to be installed and service needs to be started.</li>
+       <li> Copy the hdfcpg in E:\wamp\www\ (document root directory) </li>
+       <li> Use this url in your browser http://127.0.01/hdfcpg/ to view the demo </li>
+       </ol>
+       <h4 style="font-size:20px; text-align:left;"> Page Details: </h4>
+        <ol style="text-align:left;">
+        <li>The next page will list the parameters that is passed from the merchant website to the payment gateway </li>
+        <li>Please ensure you fill in the Account ID and the Secret key you are provided and submit the page </li>
+        <li>The page that follows will print the parameters that are passed to the payment page along with the secure hash value printed as the last detail.</li>
+        <li>Please proceed to the payment page but submitting these details.</li>
+        </ol>
+        <button onClick="document.payment.submit();"> SUBMIT </button>
+        </form>
+	<!--<form  method="post" action="validate_api.php" name="frmTransaction" id="frmTransaction" onSubmit="return validate()">-->
+	
+
+</div>
+
+
+</div>
+</th>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,473 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*----- 2013 Stylesheet -----*/
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------Reset Styles----------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+    border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;margin:0;padding:0;} 
+:focus{outline:0;} 
+body{line-height:1;color:#000000;} 
+ol,ul{list-style:none;} 
+table{border-collapse:separate;border-spacing:0;} 
+caption,th,td{text-align:left;font-weight:400;} 
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+/*----------Reset Styles End----------*/
+
+
+
+/*------------fonts---------------------*/
+@font-face {
+    font-family: 'gothic';
+    src: url('../fonts/gothic.eot');
+    src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------Generic Styles----------*/
+.left{float:left;}
+.right{float:right;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.noFloat{float:none;}
+.Hidden{display:none;}
+.pointer{cursor:pointer;}
+/*----------Generic Styles END----------*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------Font Styles----------*/
+body{
+    font-size:13px; font-family: 'gothic';
+    line-height:24px; background:url(../images/bodybg.jpg) repeat;/*background-size:contain;*/}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4{
+    /*Heading Styles*/
+}
+h1,.h1{	font-size:40px;margin-bottom:16px;line-height:44px;font-weight:bold;}
+h2,.h2{	font-size:23px;margin-bottom:15px;line-height:30px;color:#0a4e9b;margin-bottom:38px;text-transform:uppercase;}
+h2, .h2 span{margin-bottom:10px;}
+h3,.h3{	font-size:23px;margin:20px 0px;line-height:24px;color:#E53F3F;font-weight:bold;}
+
+h4,.h4{	font-size:18px;margin-bottom:13px;line-height:24px;}
+h4 span{color:#0a4e9b;}
+h5,.h5{	font-size:20px;margin-bottom:0px;line-height:22px;color:#0A4E9B;text-transform:capitalize;}
+p{ margin-bottom:12px;line-height:24px;font-size:13px; font-family: 'gothic';text-align:justify;}
+p span{color:#E53F3F;font-weight:bold;}
+/*----------Font Styles END----------*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------Menu Styles----------*/
+.nav { width:72.5%; height:auto; margin:0px auto; border:1px solid #F00; overflow:hidden;}
+ul.nav li{ width:31.5%; height:42px;margin-right:1.5%; line-height:42px; text-align:center; float:left; padding:0px;}
+ul.nav li:last-child{ margin-right:0px;}
+/*----------Menu Styles END----------*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------Layout Styles----------*/
+html,body{
+    width:100%;
+    height:100%;
+}
+#Container{
+    width:100%;
+    height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+    /*min-height:100%;*/ /* real browsers */
+    margin:0 auto; /* center, not in IE5 */
+    position:relative; /* needed for footer positioning*/
+}
+.wrapper{ width:1000px; margin:0px auto; height:auto; overflow:hidden; position:relative;}
+#Header{ width:100%; height:auto; float:left; }
+#Content,#Content_bottom{ width:100%; height:auto; float:left;}
+#Footer{ width:100%; float:left; margin-top:0px;/*background:url(../images/footerbg.png) repeat-x;/*height:97px;*/height:127px;background:linear-gradient(#595959,#151515);
+background:-webkit-linear-gradient(#595959,#151515);
+background:-moz-linear-gradient(#595959,#151515);
+background:-ms-linear-gradient(#595959,#151515);
+}
+
+/*----------Layout Styles END----------*/
+.header-top{ width:100%; height:auto; margin:0px auto;margin-bottom:0px;}
+.logo{ width:212px; height:105px; float:left;text-align:center; line-height:70px;/*background:url(../images/logo.png) no-repeat;*/margin:10px 0px;}
+
+.logo{*padding-bottom:10px;} /*for ie7*/
+
+/*---------------header-right----------------------*/
+.header-right{ width:710px; float:right; height:auto;}
+.header-right ul{margin:25px 0px;padding:0px;list-style:none;float:right;}
+
+.header-right ul li{margin:0px;padding:0px;float:left;}
+.header-right ul li a{margin:0px;padding:0px 5px;float:left; font-family: 'gothic';font-size:12px;color:#000; text-decoration:none;border-right:1px solid #000;line-height:12px;}
+.header-right ul li a:hover{color:#0A4E9B;}
+.header-right ul li a.active{color:#0A4E9B;}
+.header-right ul li a.last{border:none;padding-right:0px;}
+/*ul.topnav{ padding:0px; margin:0px; float:right;margin-bottom:30px;}
+ul.topnav{*width:96%;} /*for ie7*/
+/*ul.topnav li{ padding:0px;margin:0px; float:left;}
+ul.topnav li a{font-family: 'gothic';font-size:13px;text-decoration:none;color:#000;padding:0px 6px 0px 6px; line-height:30px;border-right:none;margin-right:2px;}
+ul.topnav li a:hover,ul.topnav li a.active{background:#e53f3f;color:#fff;}
+
+ul.topnav li a.last{padding-right:3px;margin-right:0px;}*/
+
+.banner{ width:100%; height:413px; float:left;}
+.banner-text{ width:41.5%; height:95px; margin:0px auto; margin-top:35px; border:1px solid #0F0;}
+.content-wrapper{ width:100%; height:auto; float:left;padding:0px; }
+.column2{ width:100%; float:left; height:auto; /*background: #993;*/ margin-bottom:20px; margin-top:0px;*padding-bottom:10px;}
+.column2 a{color:#0A4E9B;}
+.column2-left{ width:306px; float:left; height:auto; margin-right:32px;}
+.column2-left p span{margin:0px;paddingn:0px;font-size:15px;font-weight:normal;color:#000;margin-bottom:0px;}
+.column2-left-image{width:220px;height:160px;border:1px solid #ccc;float:left;margin-right:30px;background:#ffffff;}
+.column2-right-accordion{width:74%;height:auto;float:left;}
+.column2-right{ width:658px; float:left; height:auto;}
+.column2-right-inner{ width:738px; float:left; height:auto;}
+.column2-right-inner ul{margin:0px;padding:0px;}
+.column2-right-inner ul li{list-style:none;background:url(../images/list.png) no-repeat left center;padding-left:20px;line-height:27px;}
+.column2-right-inner ul li span{font-weight:bold;}
+.column2-right-inner img{width:30px;height:30px;float:left;margin-right:10px;}
+.column2-right-inner-news{ width:738px; float:left; height:auto;}
+.column2-right-inner-news ul{margin:0px;padding:0px;}
+.column2-right-inner-news ul li{border:1px solid #ccc;width:97%;height:auto;margin-bottom:10px;padding:10px;}
+.column2-right-inner-news ul li h5{margin-bottom:15px;font-size:17px;line-height:14px; font-weight:bold;}
+.news1{width:306px;height:auto;height:auto;border:1px solid #d8d6d0; float:left;}
+.news1 .left_icon{background:#4d4c4c;float:left;width:44px;height:52px;}
+.news1 .left_icon img{margin:10px 5px 0px 5px;}
+.news1 .text {width:234px;float:right;background:#fff;padding:11px 14px 12px 13px;}
+.news1 .text h2  {width:100%;float:right;padding:0px; font-weight:bold; color:#0A4E9B; line-height:18px; font-size:14px; text-transform:capitalize;}
+.news1 .text p{font-size:12px;line-height:23px;color:#4f4d4d;font-family: 'gothic';padding:0px;margin:0px;}
+.news1 .text p a{color:#cf1c22;text-decoration:none;}
+.news1 .text .read_more{background:url(../images/read_moreimg.png) no-repeat right 8px;width:80px;height:17px;}
+.news1 .text p a:hover{color:#000;}
+.news1 .text .read_more:hover{background:url(../images/read_moreimg_hover.png) no-repeat right 8px;width:80px;height:17px;}
+
+.column3{ width:100%; float:left; height:322px; /*background: #FC3;*/ margin-bottom:0px;}
+.column3-left{ width:31.1%; float:left; height:100px; margin-right:3%; border: 1px solid #909;}
+.column3-mid{ width:31.1%; float:left; height:100px; margin-right:3%; border: 1px solid #909;}
+.column3-right{ width:31.1%; float:left; height:100px; border: 1px solid #0C6;}
+.contact-details{ width:400px; float:left; height:auto;margin-right:0px;}
+
+/*-----------------content_bottom------------------*/
+#Content_bottom{background:#fff;padding:25px 0px 18px 0px;}
+
+
+
+
+/*------------------footer------------------*/
+/*------------------footer------------------*/
+.link{width:100%; margin:0 auto; /*margin-top:35px;*/margin-top:10px; color:#7b7a7a;}
+.link ul{margin:5px 0 0 21px;padding:0px;list-style:none;float:left;width:100%;}
+
+.link ul li{margin:0px;padding:0px;float:left;}
+.link ul li a{margin:0px;float:left;font-family: 'gothic';font-size:12px;text-decoration:none;padding:0px 7px 0px 7px; line-height: 1.2;border-right:1px solid #7b7a7a;color:#A8A8A8;} 
+.link ul li a:hover,.link ul li a.active{color: #078fff;padding:0px 7px 0px 7px;}/* :*/
+.link ul li a.last{border-right:none;}
+.link p{width:50%;margin:0 auto;font-size:11px;}
+#Footer p { color: rgba(180, 180, 180, 0.89); width: 100%; clear: both; font-size:12px }
+
+/*--------------enquiry form-----------*/
+.enquiryform {
+    border: 1px solid #CCCCCC;
+    float: left;
+    font-size: 13px;
+    padding: 0;
+    width: 58%;
+    margin-left:70px;
+    color:#000;
+}
+.info {
+    float: left;
+    padding-left: 15px;
+    width: 530px;
+}
+label.inputlabel {
+    float: left;
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+}
+input[type="text"], input[type="password"], textarea, select {
+    border: 1px solid #CCCCCC;
+    margin: 0 0 20px;
+    padding: 5px;
+    vertical-align: middle;
+    width: 55%;
+    background:transparent;
+}
+.enquiryform span {
+    float: left;
+    margin-bottom: 20px;
+    padding: 5px 5px 20px;
+}
+form span input[type="submit"],form span input[type="button"] {
+    background-color: #717171;
+    border: 1px solid #717171;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold !important;
+    margin: 10px 5px 0 164px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 94px;
+}
+form span input[type="submit"]:hover {
+    background-color: #717171;
+    border: 1px solid #717171;
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold !important;
+    margin: 10px 5px 0 164px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 94px;
+}
+/*--------------enquiry form end-----------*/
+/*------------------contact start------------------*/
+.contact {
+    float: left;
+    height: auto;
+    margin: 10px 0;
+    padding: 0;
+    width: 400px;
+}
+.contact p {
+    float: left;
+    font-size: 13px;
+
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 96px;
+}
+.dot {
+    color: #000000;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    width: 15px;
+}
+.address {
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+    width: 223px;
+}
+.address a {
+    color: #000000;
+    text-decoration: none;
+}
+.contact img {
+    float: left;
+    margin-right: 5px;
+}
+.mandatory {
+    color: #FF0000;
+    float: left;
+    font-size:19px;
+    *position:relative;
+    *right:10px;
+    *bottom:25px;
+}
+.dot3 {
+    color: #000000;
+    float: right;
+    position:relative;
+
+    bottom:3px;
+    width: 10px;
+}
+.dot3{*top:-27px;}
+.enquiryform h4 {
+    background: none no-repeat scroll 0 0 #717171;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+/*------------------contact end------------------*/
+
+/*------------------career form start------------------*/
+.careers-form {
+
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    float: left;
+    font-size: 13px;
+    margin-top: 18px;
+    width: 550px;
+
+}
+.info1 {
+    float: left;
+    margin: 0 39px;
+    width: 473px;
+}
+.careers-form h4 {
+    border-bottom: 1px solid #CCCCCC;
+    color: #0A4E9B;
+    margin: 0;
+    padding: 10px;
+}
+.text_right1 {
+    margin: 10px 0 7px;
+    text-align: right;
+    width: 95%;
+}
+
+label.inputlabel1 {
+    float: left;
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 128px;
+}
+.careers-form input[type="text"], input[type="password"], textarea, select {
+    border: 1px solid #CCCCCC;
+    margin: 0 0 20px;
+    padding: 5px;
+    vertical-align: middle;
+    width: 55%;
+}
+.browse {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 10px;
+    width: 200px;
+}
+.careers-form form span input[type="button"] {
+    background-color: #717171;
+    border: 1px solid #717171;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold !important;
+    margin: 10px 5px 0 141px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 90px;
+}
+.careers-form span {
+    float: left;
+    margin-bottom: 20px;
+    padding: 5px 5px 20px;
+}
+.careers-form form span input[type="submit"]:hover {
+    background-color: #717171;
+    border: 1px solid #717171;
+
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold !important;
+    margin: 10px 5px 0 141px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 90px;
+}
+.career-image {
+    float: left;
+    position: relative;
+    right: -94px;
+    top: 148px;
+}
+/*------------------career form end------------------*/
+
+/*------------------links start------------------*/
+.links{width:100%;float:left;height:auto;}
+.links ul{margin:0px;padding:0px;}
+.links ul li{float:left;list-style:none;width:181px;height:205px;margin-left:20px;border:1px solid #ccc;background:#ffffff no-repeat;margin-top:10px;}
+.links ul li.first{margin-left:0px;}
+.links ul li p{font-size: 20px;
+               margin: 10px auto 0;
+               width:100%;text-align:center;}
+.links ul li a{text-decoration:none;left:80px;
+               position: relative;
+               top: 35px;}
+.image1{width:77px;margin:10px auto;}
+/*------------------links end------------------*/
+
+/*My Styling*/
+
+.opening div strong { font-weight: 700; }
+.profile li { list-style-type: disc; }
+.profile ul { padding-left: 20px; }
+.careers { border: 1px solid #CCCCCC;color: #000000;display: block;font-size: 13px;margin-top: 18px;padding: 5px; }
+.apply{ background-color: #0A4E9B;color: #fff;cursor: pointer;border: 0;padding: 5px;margin: 5px; }
+.success { font-size: 16px;text-align: center; }
+.success span{ color: #fff;padding: 5px;position: relative }
+.success span.close{ cursor: pointer;background-color: #0A4E9B;border-radius: 150px;padding : 0px;position: absolute;right: -16px;top: -12px;width: 25px; }
+.PostedOn { color: #2A72BC;float:right }
+
+.newsevents {
+    width:100%; float:left;
+}
+.newsevents span.PostedOn {margin-top: -5px;}
+.newsevents h5 { float: left; }
+
+.alert-box {
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+    margin:10px;
+}
+
+.alert-box span {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.Unsuccessfull {
+    background:#ffecec url('images/error.png') no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+}
+.Successfull {
+    background:#e9ffd9 url('images/success.png') no-repeat 10px 50%;
+    border:1px solid #a6ca8a;
+}
+
+.alert-box-close {
+    cursor: pointer;
+    float: right;
+    margin-left: 882px;
+    margin-top: -106px;
+}
+
+/*.hdfcLogo{margin-left: 30px;}*/
+/*My Styling*/
+
+/** Kinjal Css**/
+
+div.hdfc-logo {
+width: 150px;
+float: left;
+margin: 10px 0;
+border: 10px solid #fff;
+max-height: 50px;
+}
+
+
+.link {
+width: 830px;
+margin: 0 auto;
+margin-top: 30px;
+color: #7b7a7a;
+float: left;
+}
+/** Kinjal Css**/

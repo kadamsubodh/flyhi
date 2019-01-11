@@ -1,0 +1,49 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.0 transitional//EN">
+<HTML><HEAD><TITLE>Sample Page</TITLE></HEAD>
+<BODY>
+<table border="1" align="center"  width="100%" >
+	<tr>
+	<td align="Left" width="90%"><font  size = 5 color = darkblue face = verdana ><b>Sample Page</td>
+	<td align="right"width="10%"><IMG SRC="images/fssnet.JPG" WIDTH="169" HEIGHT="37" BORDER="0" ALT=""></td>
+	</tr>
+</table>
+
+<br><br><br><br>		
+	<form name="form" action="SendPerformREQuest.php" method="post">	
+
+	<table border="1" align="center" width="500" >
+	<tr>
+		<th colspan="150" bgcolor="darkblue" ><font  size = 2 color = White face = verdana >Enter Parameters</th>
+	</tr>
+	<tr>
+		<td colspan="50"> <b>Transaction Amount: </b> </td>
+		<td colspan="10"> <input type="text" name="MAmount" size="25" value="1.00"></td>
+		<td colspan="30"> <b>*It Should Not Be NULL*</b> </td>
+	</tr>
+	<tr>
+		<td colspan="50"> <b>Merchant Reference. No:[TrackID]: </b> </td>
+		<td colspan="10"> <input type="text" name="MTrackid" size="25" ></td>
+		<td colspan="30"> <b>*Enter Only NUMERIC Merchant TrackID*</b> </td>
+	</tr>	
+	</table>
+	<br>
+	<center><input type="submit" value="SUBMIT" style="border-color:darkblue">
+	<br><br><br>
+	</center>	
+
+	<br>	<br>	<br>	<br><br>
+	<table border="1" align="center"  width="100%" >
+	<tr>
+	<td align="Left" width="90%"><font  size = 5 color = darkblue face = verdana ><b>Sample Page</td>
+	<td align="right"width="10%"><IMG SRC="images/fssnet.JPG" WIDTH="169" HEIGHT="37" BORDER="0" ALT=""></td>
+	</tr>
+	</table>	
+	</form>
+</BODY>
+</HTML>
+<!-- Disclaimer:- Important Note in Sample Pages
+- This is a sample demonstration page only ment for demonstration, this page should not be used in production
+- Transaction data should only be accepted once from a browser at the point of input, and then kept in a way that does not allow others to modify it (example server session, database  etc.)
+- Any transaction information displayed to a customer, such as amount, should be passed only as display information and the actual transactional data should be retrieved from the secure source last thing at the point of processing the transaction.
+- Any information passed through the customer's browser can potentially be modified/edited/changed/deleted by the customer, or even by third parties to fraudulently alter the transaction data/information. Therefore, all transaction information should not be passed through the browser to Payment Gateway in a way that could potentially be modified (example hidden form fields). 
+ -->

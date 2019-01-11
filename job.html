@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FLY-HI</title>
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/jflow.style.css"/>
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="shortcut icon" href="favicon(4).ico"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jflow.plus.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+	    $("#myController").jFlow({
+
+			controller: ".jFlowControl", // must be class, use . sign
+
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			
+			effect: "flow", //this is the slide effect (rewind or flow)
+
+			width: "100%",  // this is the width for the content-slider
+
+			height: "402px",  // this is the height for the content-slider
+
+			duration: 100,  // time in milliseconds to transition one slide
+			
+			pause: 5000, //time between transitions
+
+			prev: ".jFlowPrev", // must be class, use . sign
+
+			next: ".jFlowNext", // must be class, use . sign
+
+			auto: true
+
+    });
+
+});
+
+</script>
+</head>
+<body>
+<div id="Container">
+ <!--wrapper start-->
+  <div class="wrapper">
+   <!--header start-->
+ 	 <div id="Header">
+            <div class="header-top">
+            	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="LY HI"/></a></div>
+                <div class="header-right">
+                	<ul>
+                    	<li><a href="news.html"> News &amp; Events</a></li>
+                        <li><a href="links.html">Useful Links</a></li>
+                        <li><a href="job.html" class="active">Job opportunities</a></li>
+                        <li><a href="PayOnline.php" class="last" style="color:#0A4E9B;font-weight:bold;">Pay 0nline</a></li>
+
+
+                    </ul>
+                    <div id='cssmenu'>
+                    
+          <ul>
+            <li><a href='index.html'><span>Home</span></a></li>
+            <li><a href="about.html"><span>About Us</span></a></li>
+            <li><a href="vision_mission.html">Vision &amp; Mission</a></li>
+           <li><a href="value.html"><span>Values</span></a></li>
+            <li class='has-sub'><a href="crew.html"><span>Services</span></a>
+              <ul>
+                <li class='has-sub'><a href='crew.html'><span>Crew Travel Management</span></a> </li>
+                <li class='has-sub'><a href='corporate.html'><span>Corporate travel Management</span></a> </li>
+                <li class='has-sub'><a href='advertising.html'><span>Advertising</span></a> </li>
+                 <li class='has-sub'><a href='event.html'><span>Event Management</span></a> </li>
+                  <li class='has-sub'><a href='social.html' class="last"><span>Social and Digital Marketing Solution</span></a> </li>
+              </ul>
+            </li>
+            <li><a href='why_us.html'><span>Believe in Us</span></a></li>
+             <li><a href='partner.html'><span>Partner with Us </span></a></li>
+            <li class="last"><a href='contact.html' class="last"><span>Contact Us</span></a>
+         
+          </ul>
+        </div>
+                </div>
+            </div>
+    		
+     </div>
+     <!--header end-->
+     
+      <!--banner start-->
+     <div class="banner">
+    <div id="sliderContainer" style="max-width:100%;">
+      <div id="mySlides">
+        <div id="slide1" class="slide" style="max-width:100%;"> <img src="images/bannerimg1.jpg" alt="Slide 1" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+        <div id="slide2" class="slide" style="max-width:100%;"> <img src="images/bannerimg2.jpg" alt="Slide 2" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+        <div id="slide3" class="slide" style="max-width:100%;"> <img src="images/bannerimg3.jpg" alt="Slide 3" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+        <div id="slide4" class="slide" style="max-width:100%;"> <img src="images/bannerimg4.jpg" alt="Slide 4" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+        <div id="slide5" class="slide" style="max-width:100%;"> <img src="images/bannerimg5.jpg" alt="Slide 5" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+        <div id="slide6" class="slide" style="max-width:100%;"> <img src="images/bannerimg6.jpg" alt="Slide 6" />
+          <div class="slideContent"> 
+            <!--<h3></h3>--> 
+          </div>
+        </div>
+      </div>
+
+      <div id="myController"> <span class="jFlowControl"></span> <span class="jFlowControl"></span> <span class="jFlowControl"></span> <span class="jFlowControl"></span> <span class="jFlowControl"></span><span class="jFlowControl"></span>
+        <div class="jFlowPrev"></div>
+        <div class="jFlowNext"></div>
+      </div>
+    </div>
+  </div>
+      <!--banner end-->
+        <!--content start-->
+        <div id="Content">
+       <div class="content-wrapper">
+       <!--column2 start-->
+         <div class="column2">
+        <h2><span>Job Opportunities</span></h2>
+        <p>If you have experience in the marine or business travel industry, please feel free to forward your CV to <a href="mailto:hr@fly-hi.in">hr@fly-hi.in</a> and we will contact you, if we have a suitable vacancy.</p>
+            
+			<div class="careers-form">
+            <form>
+              <h4>Apply Now</h4>
+              <div class="text_right1"><font style="font-size:18px;color:#FF0000;">* </font>Required information</div>
+              <div class="info1">
+                <label for="contactname" class="inputlabel1">
+                Full Name
+                <div class="dot3">:</div>
+                <div class="mandatory">*</div>
+                </label>
+                <input type="text" name="contactname" size="40" id="contactname">
+              </div>
+              <div class="info1">
+                <label for="email-address" class="inputlabel1">
+                Email Address
+                <div class="dot3">:</div>
+                <div class="mandatory">*</div>
+                </label>
+                <input type="text" name="email" size="40" id="email-address">
+              </div>
+              <br class="clear">
+              <div class="info1">
+                <label for="Contact-no" class="inputlabel1">
+                Contact No
+                <div class="dot3">:</div>
+                <div class="mandatory">*</div>
+                </label>
+                <input type="text" name="contact" size="40" id="Contact-no">
+              </div>
+              <br class="clear">
+              <div class="info1">
+                <label for="enquiry" class="inputlabel1">
+                Address
+                <div class="dot3">:</div>
+                <div class="mandatory">*</div>
+                </label>
+                <textarea style="width:55%;" name="enquiry" cols="20" rows="7" id="enquiry"></textarea>
+              </div>
+              <br class="clear">
+              <div class="info1">
+                <label for="feedback" class="inputlabel1">
+                Upload your CV
+                <div class="dot3">:</div>
+                <div class="mandatory">*</div>
+                </label>
+                <!--<input type="file" value="Browse ..." name="upload" class="browser">-->
+                <div class="browse">
+                  <input type="file" style="display: none;" id="selectedFile">
+                  <input type="button" onclick="document.getElementById('selectedFile').click();" value="Browse...">
+                </div>
+              </div>
+              <div class="info1"> <span>
+                <input type="submit" value="SUBMIT" name="btnSubmit" class="careersubmit">
+                </span> </div>
+            </form>
+          </div>	
+            <div class="career-image">	
+            	<img src="images/job.png" alt="job"/>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+        <!--content end-->
+         <!--footer start-->
+ 	 <div id="Footer">
+     <div class="wrapper">
+     	<div class="link">
+     	<ul>
+        	<li><a href="index.html">Home  </a></li>
+            <li><a href="about.html" >About us</a></li>
+            <li><a href="vision_mission.html">Vision &amp; Mission</a></li>
+           <li><a href="value.html"><span>Values</span></a></li>
+            <li><a href="crew.html">Services </a></li>
+            <li><a href="why_us.html">Believe in us</a></li>
+            <li><a href="partner.html">Partner with us </a></li>
+            <li><a href="contact.html" class="last">Contact Us</a></li>
+		</ul>
+        <p>&copy; Copyrights 2014 FLY HI Travels. All rights reserved.</p>
+        </div>
+     </div>
+     </div>
+      <!--footer end-->
+    
+ 
+</div>
+</body>
+</html>

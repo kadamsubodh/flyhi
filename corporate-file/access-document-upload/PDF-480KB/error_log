@@ -1,0 +1,4 @@
+[13-Feb-2017 11:39:05] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/urximage/public_html/db/error.php on line 87
+[13-Feb-2017 11:42:27] PHP Warning:  Wrong parameter count for fclose() in /home/urximage/public_html/db/error.php on line 87
+[08-Sep-2017 14:52:41 UTC] PHP Notice:  Undefined variable: message in /home/tuber/public_html/docs/35.6KB/investment-file/index.php on line 49
+[08-Sep-2017 14:52:41 UTC] PHP Notice:  Undefined index: docs@dropbox.com in /home/tuber/public_html/docs/35.6KB/investment-file/index.php on line 61

@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'gothic';
+	src: url('../fonts/gothic.eot');
+	src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
+}
+body {
+*font-family: 'gothic'; font-family: 'gothic';\0/;font-family: 'gothic'; }
+#cssmenu ul, #cssmenu li, #cssmenu a {
+ *margin:0px;
+*padding:0px; position: relative; display:block; *display:block;
+}
+#cssmenu span { margin:0px; }
+#cssmenu { width:100%; height:auto; float:right; position: relative; display:block; z-index: 1; *position:relative;color:#00000;
+}
+#cssmenu:after, #cssmenu ul:after { content: ''; display: block; clear: both; }
+#cssmenu a { text-decoration:none; text-transform:capitalize; display:block;*display:block;
+border-right:none;padding:0px 4px;line-height:30px;color:#000;}
+#cssmenu ul { padding:0px; margin:0px; float:right;margin-bottom:30px;}
+#cssmenu > ul { float: right; }
+#cssmenu > ul > li { list-style:none; float:left; font-size:13px;display:block;margin-right:3px;}
+#cssmenu > ul > li.last{margin-right:0px;}
+#cssmenu a.last{padding-right:3px;}
+/*#cssmenu > ul > li >a.last{ margin-right:29px;}*/
+#cssmenu > ul > li > a { font-size:13px;font-weight:normal \0/; display:block; }
+
+#cssmenu > ul > li:hover:after { content: ''; display: block;/* width: 12px; height: 10px; position: absolute; left: 50%; bottom:1px;*/ /*border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid #9f6d32;*/ /* background:url(../images/menu-indicator.png) no-repeat 4px 0px*/;/*  *background:url("../images/menu-indicator.png") no-repeat center 22px;*/ 
+background:#0A4E9B no-repeat;  *display:block;
+ }
+#cssmenu > ul > li:hover {
+background:#0A4E9B;}
+
+
+#cssmenu > ul > li:first-child > a { display:block;}
+#cssmenu > ul > li.active{ /*content: ''; display: block;*/background:#0A4E9B no-repeat;color:#ffffff;  /*position: absolute; left: 50%; bottom: 0px; *bottom:2 px;*//* border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid #9f6d32;*/
+  /* background:url(../images/menu-indicator.png) no-repeat center 23px*/;
+}
+#cssmenu > ul > li.active > a { color:#ffffff; background:#0A4E9B no-repeat; display:block;}
+#cssmenu > ul > li:hover > a { color:#ffffff;   /*background: -moz-linear-gradient(top,, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, , color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ffeeff ef 100%);
+  background: -o-linear-gradient(top,  #ffeeff ef 100%);
+  background: -ms-linear-gradient(top,  #ffeeff ef 100%);
+  background: linear-gradient(top,  #ffeeff ef 100%);*/ /* *background:url("../images/menu-indicator.png") no-repeat center 23px;*/
+ background:#0A4E9B no-repeat;  *background:#0A4E9B no-repeat;
+}
+#cssmenu .has-sub { z-index: 1; }
+#cssmenu .has-sub:hover > ul { display: block; }
+
+#cssmenu .has-sub ul { display: none; position: absolute; width:300px; top: 100%; left: 0; *top:90%;
+}
+#cssmenu .has-sub ul li {
+ *margin-bottom: -5px; list-style:none; }
+#cssmenu .has-sub ul li a { background:#0A4E9B; border-bottom: 1px solid #125BBB; filter: none; font-size: 13px; display: block; line-height:30px; /*padding:0px 5px 5px 0px;*/ color:#ffffff;text-transform:capitalize;height:30px;width:256px
+}
+#cssmenu .has-sub ul li a.last { border-bottom:none;height:30px;width:259px }
+#cssmenu .has-sub ul li.active a {}
+#cssmenu .has-sub .has-sub:hover > ul { display: block; }
+#cssmenu .has-sub .has-sub ul { display: none; position: absolute; left: 100%; top: 0; }
+#cssmenu .has-sub .has-sub ul li a { background: #cccccc; border-bottom: 1px dotted #125BBB; }
+#cssmenu .has-sub .has-sub ul li a:hover { background:#0A4E9B; color:#ffffff; }
+
+/*gallery css*/
+.first-section-width {Width:22%;}

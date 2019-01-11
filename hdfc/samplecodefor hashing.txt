@@ -1,0 +1,105 @@
+
+PHP:
+
+  $HashData = $settings['secret_key']; 
+  //Sorting the Post array data in ascending order
+  ksort($data);
+  
+  foreach($data as $key => $value) {
+    if (strlen($value) > 0) {
+        $HashData .= "|" . $value;
+    }
+  }
+ $hash = strtoupper(hash("sha512", $HashData));  
+ $data['secure_hash'] = $hash;
+
+ C#
+ 			string HashData = "ebskey";
+
+            List<KeyValuePair<string, string>> postparamslist = new List<KeyValuePair<string, string>>();
+
+            for (int i = 0; i < Request.Form.Keys.Count; i++){
+                KeyValuePair<string, string> postparam = new KeyValuePair<string, string>(Request.Form.Keys[i], Request.Form[i]);
+
+                if (Request.Form.Keys[i] != "submitted")
+                    postparamslist.Add(postparam);
+            }
+
+            postparamslist.Sort(Compare1); 
+			
+			 foreach (KeyValuePair<string, string> param in postparamslist){
+			   if (param.Value.Length > 0){
+                  Response.Write(HashData += "|" + param.Value);
+			   }
+            }
+
+            string hashedvalue = "";			
+			hashedvalue = HashAlgorithm.Create("SHA512").ComputeHash(Encoding.ASCII.GetBytes(HashData));
+
+			StringBuilder sBuilder = new StringBuilder();
+
+			for (int i = 0; i < hashedvalue.Length; i++)
+			{
+				sBuilder.Append(hashedvalue[i].ToString("x2"));
+			}
+
+			hashedvalue = sBuilder.ToString().ToUpper();
+				
+
+ Function to sort:
+ 
+	 static int Compare1(KeyValuePair<string, string> a, KeyValuePair<string, string> b){
+        return a.Key.CompareTo(b.Key);
+     }
+
+Java:
+
+	String SECURE_SECRET = ""; // your secret key;
+	
+	String HashData = SECURE_SECRET;
+    // retrieve all the parameters into a hash map
+   
+	HashMap testMap = new HashMap();
+    Enumeration en = request.getParameterNames();
+
+	while(en.hasMoreElements()) {
+        String fieldName = (String) en.nextElement();
+        String fieldValue = request.getParameter(fieldName);
+        if ((fieldValue != null) && (fieldValue.length() > 0)) {
+            testMap.put(fieldName, fieldValue);
+        }
+    }
+
+	//Sort the HashMap
+    Map requestFields = new TreeMap(testMap);
+
+	for (Iterator i = requestFields.keySet().iterator(); i.hasNext();) {            
+            String key = (String)i.next();
+            String value = (String)requestFields.get(key);
+			HashData += "|"+value;
+    	}
+		
+	hashedvalue = getHash(HashData.toUpperCase());
+	
+		
+	public String getHash(String message) {
+	try {
+		byte[] buffer = message.getBytes();
+		MessageDigest md = MessageDigest.getInstance("SHA-512");
+		md.update(buffer);
+		byte[] digest = md.digest();
+		String hexValue = null;
+		for(int i = 0 ; i &lt; digest.length ; i++) {
+			int b = digest[i] &amp; 0xff;
+			if (Integer.toHexString(b).length() == 1) hex = hex + "0";
+			hex  = hex + Integer.toHexString(b);
+		}
+		return hex;
+	} catch(NoSuchAlgorithmException e) {
+		e.printStackTrace();
+	}
+	return null;
+   }
+
+  
+  
